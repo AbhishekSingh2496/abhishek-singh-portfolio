@@ -17,7 +17,7 @@ All text, links, projects and skills live in `src/data/profile.ts`.
 
 ## Resume
 
-Put your PDF at `public/resume.pdf`, then restart `npm run dev` or rebuild.
+Put your PDF at `public/Abhishek_Singh_Resume.pdf` (exact filename), then restart `npm run dev` or rebuild.
 Until the file exists, the "Download Resume" buttons show a notice saying the resume isn't uploaded yet.
 
 ## Contact form

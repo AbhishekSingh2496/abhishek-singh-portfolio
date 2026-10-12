@@ -1,10 +1,13 @@
 import { profile } from '../data/profile'
 import { showToast } from './toast'
 
-/** True when public/resume.pdf existed when the dev server / build started. */
+/** True when public/Abhishek_Singh_Resume.pdf existed when the dev server / build started. */
 export const hasResume = __HAS_RESUME__
 
-export const resumeHref = profile.resumeUrl
+export const resumeFileName = profile.resumeFile
+
+/** Prefixed with Vite's base path so the link also resolves when deployed under a sub-path. */
+export const resumeHref = `${import.meta.env.BASE_URL}${resumeFileName}`
 
 export function notifyResumeMissing() {
   showToast({

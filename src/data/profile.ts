@@ -15,7 +15,8 @@ export const profile = {
   email: 'abhisheksingh94305016@gmail.com',
   phone: '+919430501664',
   phoneDisplay: '+91 94305 01664',
-  resumeUrl: '/resume.pdf',
+  /** Resume PDF filename inside /public — also used as the downloaded filename. */
+  resumeFile: 'Abhishek_Singh_Resume.pdf',
   photo: {
     src: '/abhishek-singh-800.webp',
     srcSet: '/abhishek-singh-480.webp 480w, /abhishek-singh-800.webp 800w',
@@ -238,7 +239,7 @@ export const projects: Project[] = [
     category: 'Enterprise · Loyalty & Rewards',
     role: 'Full Stack Developer',
     association: 'KNS Technologies',
-    period: 'Jun 2024 – Present',
+    period: 'Jan 2024 – Present',
     description:
       "A loyalty and rewards platform developed for Mann+Hummel's automotive spare-parts network across South-East Asia. The platform enables mechanics and workshop owners to earn reward points by scanning QR codes on genuine spare parts and redeeming those points through a digital rewards workflow.",
     visual: 'dashboard',
@@ -294,14 +295,14 @@ export const projects: Project[] = [
   },
   {
     id: 'mh-privilege-india',
-    title: 'MH Privilege – India',
-    subtitle: 'Loyalty & Rewards Platform',
+    title: 'MANN Hamrahi – India',
+    subtitle: 'MANN+HUMMEL Genuine Parts Loyalty Platform',
     category: 'Enterprise · Loyalty & Rewards',
     role: 'Full Stack Developer',
     association: 'KNS Technologies',
-    period: 'Mar 2023 – Present',
+    period: 'March 2023 – Present',
     description:
-      "A loyalty and rewards platform developed for Mann+Hummel's automotive spare-parts network in India, enabling users to manage genuine parts, earn reward points, and participate in digital redemption workflows.",
+      'Contributed to an enterprise loyalty and rewards platform designed for automotive genuine-parts networks in India. Worked on web application features for user and distributor management, QR code generation and validation, reward points, redemption workflows, finance-related modules, dashboards, and reporting. Developed responsive user interfaces, integrated REST APIs, and supported data tables, search, filtering, pagination, and Excel export functionality.',
     visual: 'dashboard',
     highlights: ['QR generation, scanning & tracking', 'Finance & reporting modules', 'Sortable data dashboards', 'AWS deployment & support'],
     features: [
@@ -331,7 +332,7 @@ export const projects: Project[] = [
       'AWS deployment',
       'Production support',
     ],
-    tech: mhTech,
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'REST APIs', 'Git', 'GitHub'],
     links: {},
     linkNote: 'Client platform — source code and live system are private.',
     details: {
@@ -361,7 +362,7 @@ export const projects: Project[] = [
     subtitle: 'Personal MERN Stack Social Media Application',
     category: 'Full Stack · Social Media',
     role: 'Full Stack Developer',
-    period: 'Nov 2021 – Apr 2022',
+    period: 'Feb 2021 – Apr 2022',
     description:
       'OurSpace is a personal full-stack social media application developed to strengthen practical MERN Stack development skills and experience building a complete web application from frontend to backend.',
     visual: 'social',
